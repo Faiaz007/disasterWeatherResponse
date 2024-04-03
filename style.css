@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
     margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-    background: #b3d9e7;
+    background: #b0d7e0;
 }
 
 h1 {
@@ -16,7 +16,7 @@ h1 {
     padding: 18px 0;
     text-align: center;
     font-size: 1.75rem;
-    background: rgb(19, 105, 180);
+    background: rgb(20, 29, 37);
 }
 
 .container {
@@ -58,7 +58,7 @@ h1 {
 
 .weather-input .search-btn {
     color: white;
-    background: rgb(65, 159, 218);
+    background: rgb(50, 146, 202);
 }
 
 .weather-input .location-btn {
@@ -77,18 +77,18 @@ h1 {
 
 .weather-input .separator::before {
     content: "or";
-    color: #72a2cb;
+    color: #93bbdd;
     font-size: 1.18rem;
     padding: 0 15px;
     margin-top: -4px;
-    background-color: #e3f2fd;
+    background-color: #e3fdf8;
 }
 
 .weather-data {
     width: 100%;
 }
 .current-weather {
-    background: #268cc3;
+    background: #4faad5;
     color: #fff;
     border-radius: 5px;
     padding: 20px 70px 20px 20px;
@@ -105,11 +105,12 @@ h1 {
     margin-top: 12px;
     font-size: 1rem;
     font-weight: 500;
+    
 }
 
 .current-weather .icon img {
-    max-width: 120px;
-    margin-top: -15px;
+    max-width: 100%
+    
 }
 
 .current-weather .icon h4 {
@@ -127,15 +128,18 @@ h1 {
     gap: 20px;
     flex-direction: row;
     
+    
+    
 }
 
 .weather-cards .card {
     list-style: none;
     color: #fff;
-    padding: 18px 16px;
+    padding: 18px 15px;
     border-radius: 6px;
-    background: #8d9a9d;
-    width: calc(100%/ 5 );
+    background: #949c9b;
+    width: calc(100%/ 2 );
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .weather-cards .card img {
@@ -180,43 +184,113 @@ h1 {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 30px;
 }
-.disaster-weather div {
-    background-color: #d4dbee;
-    padding: 20px;
-    border-radius: 8px;
-    flex: 2;
+
+.disaster-weather h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    color: #333;
+    width: 100%;
     text-align: center;
 }
-.tornado-weather h3,
-.earthquake-weather h3,
-.flood-weather h3 {
+
+.card {
+    background-color: #9dc5d1;
+    padding: 20px;
+    border-radius: 25px;
+    flex: 1;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
     margin-bottom: 15px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
-.tornado-weather img,
-.earthquake-weather img,
-.flood-weather img {
-    max-width: 500px;
-    margin-bottom: 10px;
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
 }
 
-.tornado-weather h3,
-.earthquake-weather h3,
-.flood-weather h3 {
-    margin-bottom: 10px;
+.card-text {
+    margin-bottom: 15px;
     font-size: 1rem;
+    color: #333;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 950px) {
     .disaster-weather {
-        flex-direction: row;
+        flex-direction: column;
         gap: 20px;
     }
 
-    .disaster-weather div {
-        margin-bottom: 40px;
+    .card {
+        margin-bottom: 30px;
     }
+}
+
+.emergency-resources {
+    margin-top: 30px;
+    background-color: #c9eaf1;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.emergency-resources h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    color: #333;
+    width: 100%;
+    text-align: center;
+}
+
+.emergency-resources .card {
+    flex: 0 0 calc(33.3333% - 20px); 
+    margin: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.emergency-resources .card:hover {
+    transform: translateY(-10px);
+}
+
+.emergency-resources .card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.emergency-resources .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.emergency-resources .card-text {
+    color: #3e3e3e;
+    font-size: 1rem;
+}
+
+.emergency-resources a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.emergency-resources a:hover {
+    text-decoration: underline;
+    color: #0056b3;
 }
