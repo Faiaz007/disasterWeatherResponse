@@ -11,8 +11,8 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Weather dashboard</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">Weather Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -33,23 +33,25 @@
     <main class="container">
         <div class="weather-input">
             <h3>Enter city name</h3>
-            <div class="input-group mb-3">
-                <input type="text" class="form-control city-input" placeholder="Dhaka, Khulna, Sylhet,Chittagong">
-                <button class="btn btn-primary search-btn">Search</button>
-            </div>
-            <hr class="my-4">
-            <button class="btn btn-secondary location-btn">Current Location</button>
+            <input class="city-input" type="text" placeholder="Dhaka, Khulna, Sylhet,Chittagong">
+            <button class="search-btn">Search</button>
+            <div class="separator"></div>
+            <button class="location-btn">Current Location</button>
         </div>
         <section class="weather-data">
-            <article class="current-weather">
-                <div class="details">
-                    <h3>( ____ )</h3>
-                    <h5>Temperature: ___ °C</h5>
-                    <h5>Humidity: __ %</h5>
-                    <h5>Wind Speed: __ M/S</h5>
-                    </li>
-                </div> 
+            <article class="current-weather card">
+                <div class="row g-0">
+                    <div class="col-md-15">
+                        <div class="card-body">
+                            <h3 class="card-title">( __ )</h3>
+                            <h5 class="card-text">Temperature: ___°C</h5>
+                            <h5 class="card-text">Humidity: __ %</h5>
+                            <h5 class="card-text">Wind Speed: __ M/S</h5>
+                        </div>
+                    </div>
+                </div>
             </article>
+        </section>
             <section class="days-forecast">
                 <h2>5-days forecast</h2>
                 <ul class="weather-cards">
@@ -136,7 +138,7 @@
                     </div>
                 </div>
             </section>
-        </section>
+        
     </main>
 
     <footer>

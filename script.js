@@ -10,21 +10,21 @@ const createWeatheraCard =(cityName, weatherItem, index)=>{
         return`<div class="current-weather">
         <div class="details">
             <h2>${cityName}(${weatherItem.dt_txt.substring(0, 10)})</h2>
-            <h5>Temperature: ${(weatherItem.main.temp -273.15).toFixed(2)} °C</h5>
-            <h5>Humidity:${weatherItem.main.humidity} %</h5>
-            <h5>Wind Speed:${weatherItem.wind.speed} M/S</h5>
+            <h5>Temperature: ${(weatherItem.main.temp -273.15).toFixed(2)}°C</h5>
+            <h5>Humidity:${weatherItem.main.humidity}%</h5>
+            <h5>Wind Speed:${weatherItem.wind.speed}M/S</h5>
         </div>
         <div class="icon">
-        <img src="https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@2x.png" alt="weather-icon">
+        <img src="https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@4x.png" alt="weather-icon">
             <h4>${weatherItem.weather[0].description}</h4>
         </div>`;
     }//HTML for 5 days forcast cards
     return ` <li class="card">
     <h3>( ${weatherItem.dt_txt.substring(0, 10)} )</h3>
-    <img src="https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@4x.png" alt="weather-icon">
-    <h5>Temperature: ${(weatherItem.main.temp -273.15).toFixed(2)} °C</h5>
-    <h5>Humidity:${weatherItem.main.humidity} %</h5>
-    <h5>Wind Speed:${weatherItem.wind.speed} M/S</h5>
+    <img src="https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@2x.png" alt="weather-icon">
+    <h5>Temperature: ${(weatherItem.main.temp -273.15).toFixed(2)}°C</h5>
+    <h5>Humidity:${weatherItem.main.humidity}%</h5>
+    <h5>Wind Speed:${weatherItem.wind.speed}M/S</h5>
 </li>`;
 };
 
@@ -90,7 +90,7 @@ const getUserCoordinates = () =>{
 
         }).catch(()=>{
 
-            alert("An error occured while fetching the city!");
+            alert("An error occured while fetching the city coordinates!");
         });
     },  
     error => { //Show error if user denied the location permission

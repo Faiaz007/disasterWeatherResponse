@@ -28,13 +28,14 @@ h1 {
 
 .weather-input {
     width: 100%;
-    max-width: 500px;
-    border-radius: 8px;
+    max-width: 472px;
+    border-radius: 18px;
     padding: 20px;
 }
 .weather-input h2 {
     font-size: 1.5rem;
     margin-bottom: 25px;
+    
 }
 .weather-input input {
     width: 100%;
@@ -59,10 +60,13 @@ h1 {
 .weather-input .search-btn {
     color: white;
     background: rgb(50, 146, 202);
+    border-radius: 10px;
 }
 
 .weather-input .location-btn {
-    background: #6c757d;
+    background: #9ea6ad;
+    border-radius: 10px;
+
 }
 
 .weather-input .separator {
@@ -84,33 +88,50 @@ h1 {
     background-color: #e3fdf8;
 }
 
+
+
 .weather-data {
     width: 100%;
 }
+
 .current-weather {
-    background: #4faad5;
+    background-color: #4faad5;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 23px;
     padding: 20px 70px 20px 20px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
 }
 
-.current-weather h2 {
-    font-size: 1.7rem;
+.current-weather:hover {
+    transform: scale(1.03);
+}
+
+.current-weather h3 {
+    font-size: 1.68rem;
+    margin-bottom: 100px;
+    text-transform: capitalize;
+}
+
+.current-weather .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex;
 }
 
 .weather-data {
-    margin-top: 12px;
-    font-size: 1rem;
-    font-weight: 500;
-    
+    margin-top: 18px;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .current-weather .icon img {
-    max-width: 100%
-    
+    max-width: 100%;
+    margin-bottom: 15px;
+    margin: auto;
 }
 
 .current-weather .icon h4 {
@@ -120,65 +141,117 @@ h1 {
 
 .current-forecast h2 {
     font-size: 1.5rem;
-    margin: 18px 0;
+    margin: 20px 0;
 }
+
+
+
 
 .weather-cards {
     display: flex;
     gap: 20px;
-    flex-direction: row;
-    
-    
+    flex-wrap: wrap;
     
 }
 
 .weather-cards .card {
     list-style: none;
     color: #fff;
-    padding: 18px 15px;
-    border-radius: 6px;
+    padding: 20px;
+    border-radius: 8px;
     background: #949c9b;
-    width: calc(100%/ 2 );
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% / 4 - 20px); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    text-align: center; 
+    transition: 0.35s ease-in-out;
+    align-items: center;
+}
+
+.weather-cards .card:hover {
+    transform: translateY(-5px); 
 }
 
 .weather-cards .card img {
     max-width: 70%;
-    margin: 5px 0 -12px 0;
+    margin: 15px 0 -20px 0; 
 }
-@media (max-width:1400px){
-    .weather-data .current-weather{
+
+.weather-cards .card h5 {
+    margin: 10px 0; 
+}
+
+@media (max-width: 1400px) {
+    .weather-data .current-weather {
         padding: 20px;
     }
-    .weather-cards{
+    .weather-cards {
         flex-wrap: wrap;
     }
-    .weather-cards .card{
-        width: calc(100%/ 4 - 15px);
+    .weather-cards .card {
+        width: calc(100% / 4 - 20px);
     }
 }
-@media(max-width:1200px){
-    .weather-cards .card{
-        width: calc(100%/ 3 - 15px);
+
+@media (max-width: 1200px) {
+    .weather-cards .card {
+        width: calc(100% / 3 - 20px);
     }
 }
-@media(max-width:950px){
-    .weather-input{
+
+@media (max-width: 950px) {
+    .weather-input {
         width: 450px;
     }
-    .weather-cards .card{
-        width: calc(100% / 2 - 10px);
+    .weather-cards .card {
+        width: calc(100% / 2 - 20px);
     }
 }
-@media (max-width:750px){
+
+@media (max-width: 750px) {
     .container {
         padding: 15px;
-        flex-wrap: wrap;
     }
     .weather-input {
         padding: 100%;
     }
+}
 
+
+
+@media (max-width: 1400px) {
+    .weather-data .current-weather {
+        padding: 20px;
+    }
+    .weather-cards {
+        flex-wrap: wrap;
+    }
+    .weather-cards .card {
+        width: calc(100% / 4 - 20px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .weather-cards .card {
+        width: calc(100% / 3 - 20px);
+    }
+}
+
+@media (max-width: 950px) {
+    .weather-input {
+        width: 450px;
+    }
+    .weather-cards .card {
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        padding: 15px;
+    }
+    .weather-input {
+        padding: 100%;
+    }
 }
 .disaster-weather {
     display: flex;
