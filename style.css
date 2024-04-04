@@ -367,3 +367,26 @@ h1 {
     text-decoration: underline;
     color: #0056b3;
 }
+
+.editAidProvider{
+    /* margin-top: 39rem;
+    margin-left: 88rem; */
+    background-color: orangered;
+    padding: 20px 35px;
+    font-size: 18px;
+    border: none;
+    /* margin: 5px; */
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    /* margin-top: 22px; */
+    
+    /* color: #007bff; */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.editAidProvider:hover{
+    text-decoration: underline;
+    color: #05111d;
+}
