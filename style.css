@@ -296,8 +296,8 @@ h1 {
 }
 
 .editAidProvider{
-    margin-top: 39rem;
-    margin-left: 88rem;
+    /* margin-top: 39rem;
+    margin-left: 88rem; */
     background-color: orangered;
     padding: 20px 35px;
     font-size: 18px;
