@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,13 @@
     <link rel="stylesheet" href="style.css">
     <title>Weather Home</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Weather Dashboard</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -33,7 +36,7 @@
     <main class="container">
         <div class="weather-input">
             <h3>Enter city name</h3>
-            <input class="city-input" type="text" placeholder="Dhaka, Khulna, Sylhet,Chittagong">
+            <input class="city-input" type="text" placeholder="Dhaka, Khulna, Sylhet, Chittagong">
             <button class="search-btn">Search</button>
             <div class="separator"></div>
             <button class="location-btn">Current Location</button>
@@ -52,97 +55,99 @@
                 </div>
             </article>
         </section>
-            <section class="days-forecast">
-                <h2>5-days forecast</h2>
-                <ul class="weather-cards">
-                    <li class="card">
-                        <h3>( ____ )</h3>
-                        <h5>Temperature: ___ °C</h5>
-                        <h5>Humidity: __ %</h5>
-                        <h5>Wind Speed: __ M/S</h5>
-                    </li>
-                    <li class="card">
-                        <h3>( ____ )</h3>
-                        <h5>Temperature: ___ °C</h5>
-                        <h5>Humidity: __ %</h5>
-                        <h5>Wind Speed: __ M/S</h5>
-                    </li>
-                    <li class="card">
-                        <h3>( ____ )</h3>
-                        <h5>Temperature: ___ °C</h5>
-                        <h5>Humidity: __ %</h5>
-                        <h5>Wind Speed: __ M/S</h5>
-                    </li>
-                    <li class="card">
-                        <h3>( ____ )</h3>
-                        <h5>Temperature: ___ °C</h5>
-                        <h5>Humidity: __ %</h5>
-                        <h5>Wind Speed: __ M/S</h5>
-                    </li>
-                    <li class="card">
-                        <h3>( ____ )</h3>
-                        <h5>Temperature: ___ °C</h5>
-                        <h5>Humidity: __ %</h5>
-                        <h5>Wind Speed: __ M/S</h5>
-                    </li>
-
-                </ul>
-            </section>
-            <section class="disaster-weather">
-                <h2>Disaster events</h2>
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h2 class="card-title">Tornado Alert</h2>
-                        <img src="icons/tornado (1).png" alt="Tornado icon" class="img-fluid mb-3">
-                        <p class="card-text">Stay indoors and take shelter immediately.</p>
-                    </div>
+        <section class="days-forecast">
+            <h2>5-days forecast</h2>
+            <ul class="weather-cards">
+                <li class="card">
+                    <h3>( ____ )</h3>
+                    <h5>Temperature: ___ °C</h5>
+                    <h5>Humidity: __ %</h5>
+                    <h5>Wind Speed: __ M/S</h5>
+                </li>
+                <li class="card">
+                    <h3>( ____ )</h3>
+                    <h5>Temperature: ___ °C</h5>
+                    <h5>Humidity: __ %</h5>
+                    <h5>Wind Speed: __ M/S</h5>
+                </li>
+                <li class="card">
+                    <h3>( ____ )</h3>
+                    <h5>Temperature: ___ °C</h5>
+                    <h5>Humidity: __ %</h5>
+                    <h5>Wind Speed: __ M/S</h5>
+                </li>
+                <li class="card">
+                    <h3>( ____ )</h3>
+                    <h5>Temperature: ___ °C</h5>
+                    <h5>Humidity: __ %</h5>
+                    <h5>Wind Speed: __ M/S</h5>
+                </li>
+                <li class="card">
+                    <h3>( ____ )</h3>
+                    <h5>Temperature: ___ °C</h5>
+                    <h5>Humidity: __ %</h5>
+                    <h5>Wind Speed: __ M/S</h5>
+                </li>
+            </ul>
+        </section>
+        <section class="disaster-weather">
+            <h2>Disaster events</h2>
+            <div class="card text-center">
+                <div class="card-body">
+                    <h2 class="card-title">Tornado Alert</h2>
+                    <img src="icons/tornado (1).png" alt="Tornado icon" class="img-fluid mb-3">
+                    <p class="card-text">Stay indoors and take shelter immediately.</p>
                 </div>
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h2 class="card-title">Earthquake Alert</h2>
-                        <img src="icons/earthquake.png" alt="Earthquake icon" class="img-fluid mb-3">
-                        <p class="card-text">Drop, cover, and hold on.</p>
-                    </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                    <h2 class="card-title">Earthquake Alert</h2>
+                    <img src="icons/earthquake.png" alt="Earthquake icon" class="img-fluid mb-3">
+                    <p class="card-text">Drop, cover, and hold on.</p>
                 </div>
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h2 class="card-title">Flood Alert</h2>
-                        <img src="icons/flooded-house.png" alt="Flood icon" class="img-fluid mb-3">
-                        <p class="card-text">Move to higher ground and avoid flooded areas.</p>
-                    </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                    <h2 class="card-title">Flood Alert</h2>
+                    <img src="icons/flooded-house.png" alt="Flood icon" class="img-fluid mb-3">
+                    <p class="card-text">Move to higher ground and avoid flooded areas.</p>
                 </div>
-            </section>
-    
-            
-            <section class="emergency-resources">
-                <h2>Emergency Resources</h2>
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h2 class="card-title">Shelter</h2>
-                        <img src="icons/shelter.png" alt="Tornado icon" class="img-fluid mb-3">
-                        <p class="card-text">Find the nearest shelter.</p>
-                    </div>
+            </div>
+        </section>
+        <section class="emergency-resources">
+            <h2>Emergency Resources</h2>
+            <div class="card text-center">
+                <div class="card-body">
+                    <h2 class="card-title">Shelter</h2>
+                    <img src="icons/shelter.png" alt="Tornado icon" class="img-fluid mb-3">
+                    <p class="card-text">Find the nearest shelter.</p>
                 </div>
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h2 class="card-title">Medical Supplies</h2>
-                        <img src="icons/medical-kit.png" alt="Medical Kit icon" class="img-fluid mb-3">
-                        <p class="card-text">Call for Medical supplies.</p>
-                    </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                    <h2 class="card-title">Medical Supplies</h2>
+                    <img src="icons/medical-kit.png" alt="Medical Kit icon" class="img-fluid mb-3">
+                    <p class="card-text">Call for Medical supplies.</p>
                 </div>
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h2 class="card-title">Supplies</h2>
-                        <img src="icons/supplies.png" alt="Food Supplies icon" class="img-fluid mb-3">
-                        <p class="card-text">Call for Food supplies.</p>
-                    </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-body">
+                    <h2 class="card-title">Supplies</h2>
+                    <img src="icons/supplies.png" alt="Food Supplies icon" class="img-fluid mb-3">
+                    <p class="card-text">Call for Food supplies.</p>
                 </div>
-            </section>
-        
+            </div>
+        </section>
     </main>
 
     <footer>
-        <!-- Footer content goes here -->
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <p>&copy; 2024 Weather Home</p>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -150,4 +155,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
