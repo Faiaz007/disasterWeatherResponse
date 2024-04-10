@@ -1,6 +1,6 @@
 <?php 
 
-include "./db.php";
+include "db.php";
 
 $sql = "SELECT location_id, latitude, longitude, city_name, country, population_demographic FROM location";
 
@@ -43,7 +43,6 @@ $result = $conn->query($sql);
                                 <td><?php echo $row['population_demographic']; ?></td>
                                 <td>
                                     <a class="btn btn-info" href="update_location.php?id=<?php echo $row['location_id']; ?>">Edit</a>
-                                    <a class="btn btn-danger" href="delete_location.php?id=<?php echo $row['location_id']; ?>">Delete</a>
                                 </td>
                             </tr>                       
                 <?php   }
