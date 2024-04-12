@@ -50,7 +50,7 @@ $result = $conn->query($sql);
                 ?>              
             </tbody>
         </table>
-        <a style="color:black;" class="btn btn-warning" href="create_cyclone.php"><b>Create Cyclone</b></a>
+        <a style="color:black;" class="btn btn-warning" href="cyclone_form.php"><b>Create Cyclone</b></a>
     </div> 
 </body>
 </html>

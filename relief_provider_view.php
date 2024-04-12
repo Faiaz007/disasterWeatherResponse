@@ -48,7 +48,7 @@ $result = $conn->query($sql);
                 ?>              
             </tbody>
         </table>
-        <a style="color:black;" class="btn btn-warning" href="create_relief.php"><b>Add Relief</b></a>
+        <a style="color:black;" class="btn btn-warning" href="relief_provide_form.php"><b>Add Relief</b></a>
     </div> 
 </body>
 </html>

@@ -46,7 +46,7 @@ $result = $conn->query($sql);
                 ?>              
             </tbody>
         </table>
-        <a style="color:black;" class="btn btn-warning" href="create_earthquake.php"><b>Create Earthquake</b></a>
+        <a style="color:black;" class="btn btn-warning" href="earthquake_form.php"><b>Create Earthquake</b></a>
     </div> 
 </body>
 </html>

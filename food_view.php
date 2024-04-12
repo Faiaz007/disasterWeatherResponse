@@ -52,7 +52,7 @@ $result = $conn->query($sql);
                 ?>              
             </tbody>
         </table>
-        <a style="color:black;" class="btn btn-warning" href="create_food.php"><b>Create Food Item</b></a>
+        <a style="color:black;" class="btn btn-warning" href="food_form.php"><b>Create Food Item</b></a>
     </div> 
 </body>
 </html>

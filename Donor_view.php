@@ -48,7 +48,7 @@ $result = $conn->query($sql);
                 ?>              
             </tbody>
         </table>
-        <a style="color:black;" class="btn btn-warning" href="create_donor.php"><b>Create Donor</b></a>
+        <a style="color:black;" class="btn btn-warning" href="donor_form.php"><b>Create Donor</b></a>
     </div> 
 </body>
 </html>

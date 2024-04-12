@@ -49,7 +49,7 @@ $result = $conn->query($sql);
                 ?>              
             </tbody>
         </table>
-        <a style="color:black;" class="btn btn-warning" href="create_fabric.php"><b>Create Fabric</b></a>
+        <a style="color:black;" class="btn btn-warning" href="fabric_form.php"><b>Create Fabric</b></a>
     </div> 
 </body>
 </html>

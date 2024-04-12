@@ -57,7 +57,7 @@ $result = $conn->query($sql);
                 ?>              
             </tbody>
         </table>
-        <a style="color:black;" class="btn btn-warning" href="create_weather.php"><b>Add Weather Data</b></a>
+        <a style="color:black;" class="btn btn-warning" href="weather_form.php"><b>Add Weather Data</b></a>
     </div> 
 </body>
 </html>

@@ -60,7 +60,7 @@ $result = $conn->query($sql);
                 ?>              
             </tbody>
         </table>
-        <a style="color:black;" class="btn btn-warning" href="create_medicine.php"><b>Add Medicine</b></a>
+        <a style="color:black;" class="btn btn-warning" href="medicine_form.php"><b>Add Medicine</b></a>
     </div> 
 </body>
 </html>
