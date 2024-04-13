@@ -1,7 +1,7 @@
-// Update form action: action="update_weather.php"
-
-// PHP script: update_weather.php
 <?php 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 include "db.php";
 
 if (isset($_POST['update'])) {
@@ -23,7 +23,7 @@ if (isset($_POST['update'])) {
         echo 'Record updated successfully.';
         echo '</div>';
         echo "<script>console.log('Record updated successfully.');</script>";
-        header( "refresh:2; url=./view.php" ); 
+        header( "refresh:2; url=./weather_view.php" ); 
     } else {
         echo "Error:" . $sql . "<br>" . $conn->error;
     }
@@ -48,7 +48,7 @@ if (isset($_GET['id'])) {
 <html>
 <head>
     <title>Weather Update Form</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css">
 </head>
 <body>
 <div class="container">
@@ -93,7 +93,7 @@ if (isset($_GET['id'])) {
 </html> 
 <?php
     } else { 
-        header('Location: view.php');
+        header('Location:weather_view.php');
     } 
 }
 ?>

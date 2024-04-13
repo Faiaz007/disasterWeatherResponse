@@ -53,7 +53,7 @@ $result = $conn->query($sql);
                 ?>              
             </tbody>
         </table>
-        <a style="color:black;" class="btn btn-warning" href="create_location.php"><b>Add Location</b></a>
+        <a style="color:black;" class="btn btn-warning" href="location_form.php"><b>Add Location</b></a>
     </div> 
 </body>
 </html>

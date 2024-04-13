@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
 
     if ($result === TRUE) {
         echo '<div class="alert alert-success" role="alert">New earthquake record created successfully!</div>';
-        header("refresh:2; url=./view.php");
+        header("refresh:2; url=./earthquake_view.php");
     } else {
         echo '<div class="alert alert-danger" role="alert">Error: ' . $sql . "<br>" . $conn->error . '</div>';
     }

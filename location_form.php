@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
     if ($result == TRUE) {
         echo '<div class="alert alert-success" role="alert">New record created successfully!</div>';
         echo "<script>console.log('New record created successfully!');</script>";
-        header("refresh:2; url=./view.php");
+        header("refresh:2; url=./location_form.php");
         exit; // Added exit to stop further execution after redirection
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;

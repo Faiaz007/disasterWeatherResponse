@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
 
     if ($conn->query($sql) === TRUE) {
         echo '<div class="alert alert-success" role="alert">New record created successfully!</div>';
-        header("refresh:2; url=./view_medicine.php");
+        header("refresh:2; url=./medicine_view.php");
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     } 

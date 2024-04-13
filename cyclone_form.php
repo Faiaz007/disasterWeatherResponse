@@ -1,48 +1,76 @@
-<?php 
+<?php
 include "db.php";
 
 if (isset($_POST['submit'])) {
-    // Assuming you have collected the necessary form data for each table
-    // Adjust variable names and values accordingly
-
-    // Insert into cyclone table
-    $cyclone_event_id = $_POST['cyclone_event_id'];
     $wind_speed = $_POST['wind_speed'];
     $center_pressure = $_POST['center_pressure'];
     $center_eye = $_POST['center_eye'];
     $radius = $_POST['radius'];
 
-    $stmt_cyclone = $conn->prepare("INSERT INTO `cyclone` (`cyclone_event_id`, `wind_speed`, `center_pressure`, `center_eye`, `radius`) VALUES (?, ?, ?, ?, ?)");
-    $stmt_cyclone->bind_param("sssss", $cyclone_event_id, $wind_speed, $center_pressure, $center_eye, $radius);
+    $sql = "INSERT INTO cyclone(wind_speed, center_pressure, center_eye, radius) VALUES ('$wind_speed','$center_pressure','$center_eye','$radius')";
 
-    if ($stmt_cyclone->execute()) {
+    $result = $conn->query($sql);
+
+    if ($result === TRUE) {
         echo '<div class="alert alert-success" role="alert">New cyclone record created successfully!</div>';
+        echo "<script>console.log('New cyclone record created successfully!');</script>";
+        header("refresh:2; url=./view.php");
     } else {
-        echo '<div class="alert alert-danger" role="alert">Error: ' . $stmt_cyclone->error . '</div>';
+        echo "Error: " . $sql . "<br>" . $conn->error;
     }
-    $stmt_cyclone->close();
 
-    // Insert into disaster_aid_provider table
-    $provider_id = $_POST['provider_id'];
-    $organization_name = $_POST['organization_name'];
-    $person_name = $_POST['person_name'];
-    $person_email = $_POST['person_email'];
-    $person_contact_no = $_POST['person_contact_no'];
-    $event_id_disaster_aid = $_POST['event_id_disaster_aid'];
-
-    $stmt_disaster_aid_provider = $conn->prepare("INSERT INTO `disaster_aid_provider` (`provider_id`, `organization_name`, `person_name`, `person_email`, `person_contact_no`, `event_id`) VALUES (?, ?, ?, ?, ?, ?)");
-    $stmt_disaster_aid_provider->bind_param("ssssss", $provider_id, $organization_name, $person_name, $person_email, $person_contact_no, $event_id_disaster_aid);
-
-    if ($stmt_disaster_aid_provider->execute()) {
-        echo '<div class="alert alert-success" role="alert">New disaster aid provider record created successfully!</div>';
-    } else {
-        echo '<div class="alert alert-danger" role="alert">Error: ' . $stmt_disaster_aid_provider->error . '</div>';
-    }
-    $stmt_disaster_aid_provider->close();
-
-    // Handle insertion for other tables in a similar manner
-
-    // Close the database connection
     $conn->close();
 }
 ?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cyclone Signup Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Cyclone Form</h2>
+
+        <form action="" method="POST">
+
+            <fieldset>
+
+                <legend>Cyclone information:</legend>
+
+                <div class="form-group">
+                    <label for="wind_speed">Wind Speed:</label>
+                    <input type="text" class="form-control" name="wind_speed" id="wind_speed">
+                </div>
+
+                <div class="form-group">
+                    <label for="center_pressure">Center Pressure:</label>
+                    <input type="text" class="form-control" name="center_pressure" id="center_pressure">
+                </div>
+
+                <div class="form-group">
+                    <label for="center_eye">Center Eye:</label>
+                    <input type="text" class="form-control" name="center_eye" id="center_eye">
+                </div>
+
+                <div class="form-group">
+                    <label for="radius">Radius:</label>
+                    <input type="text" class="form-control" name="radius" id="radius">
+                </div>
+
+                <input type="submit" name="submit" value="Submit" class="btn btn-primary">
+
+            </fieldset>
+
+        </form>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

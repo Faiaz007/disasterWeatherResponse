@@ -19,7 +19,7 @@ if (isset($_POST['update'])) {
         echo 'Record updated successfully.';
         echo '</div>';
         echo "<script>console.log('Record updated successfully.');</script>";
-        header( "refresh:2; url=./view.php" ); 
+        header( "refresh:2; url=./relief_provider_view.php" ); 
     } else {
         echo "Error:" . $sql . "<br>" . $conn->error;
     }
@@ -66,7 +66,7 @@ if (isset($_GET['event_id']) && isset($_GET['provider_id'])) {
 </html> 
 <?php
     } else { 
-        header('Location: view.php');
+        header('Location: relief_provider_view.php');
     } 
 }
 ?>

@@ -16,7 +16,7 @@ if (isset($_GET['id'])) {
     // Execute the statement
     if ($stmt->execute()) {
         echo '<div class="alert alert-success" role="alert">Record successfully deleted!</div>';
-        header("refresh:2; url=./view.php");
+        header("refresh:2; url=./cyclone_view.php");
     } else {
         echo "Error:" . $stmt->error;
     }

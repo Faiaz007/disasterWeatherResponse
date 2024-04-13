@@ -24,7 +24,7 @@ if (isset($_POST['update'])) {
         echo 'Record updated successfully.';
         echo '</div>';
         echo "<script>console.log('Record updated successfully.');</script>";
-        header( "refresh:2; url=./view.php" ); 
+        header( "refresh:2; url=./medicine_view.php" ); 
     } else {
         echo "Error:" . $sql . "<br>" . $conn->error;
     }
@@ -100,7 +100,7 @@ if (isset($_GET['id'])) {
 </html> 
 <?php
     } else { 
-        header('Location: view.php');
+        header('Location: medicine_view.php');
     } 
 }
 ?>
