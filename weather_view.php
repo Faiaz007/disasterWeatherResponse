@@ -45,8 +45,8 @@ $result = $conn->query($sql);
                             <td><?php echo $row['precipitation']; ?></td>
                             <td><?php echo $row['location_id']; ?></td>
                             <td>
-                                <a class="btn btn-info" href="update_weather.php?id=<?php echo $row['weather_id']; ?>">Edit</a>&nbsp;
-                                <a class="btn btn-danger" href="delete_weather.php?id=<?php echo $row['weather_id']; ?>">Delete</a>
+                                <a class="btn btn-info" href="weather_update.php">Edit</a>&nbsp;
+                                <a class="btn btn-danger" href="weather_delete.php?id=<?php echo $row['weather_id']; ?>">Delete</a>
                             </td>
                         </tr>                       
                 <?php   }

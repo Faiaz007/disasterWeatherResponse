@@ -36,8 +36,8 @@ $result = $conn->query($sql);
                             <td><?php echo $row['relief_name']; ?></td>
                             <td><?php echo $row['quantity']; ?></td>
                             <td>
-                                <a class="btn btn-info" href="update_relief.php?event_id=<?php echo $row['event_id']; ?>&provider_id=<?php echo $row['provider_id']; ?>">Edit</a>&nbsp;
-                                <a class="btn btn-danger" href="delete_relief.php?event_id=<?php echo $row['event_id']; ?>&provider_id=<?php echo $row['provider_id']; ?>">Delete</a>
+                                <a class="btn btn-info" href="relief_provide_update.php?event_id=<?php echo $row['event_id']; ?>&provider_id=<?php echo $row['provider_id']; ?>">Edit</a>&nbsp;
+                                <a class="btn btn-danger" href="relief_provider_delete.php?event_id=<?php echo $row['event_id']; ?>&provider_id=<?php echo $row['provider_id']; ?>">Delete</a>
                             </td>
                         </tr>                       
                 <?php   }

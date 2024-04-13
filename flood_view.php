@@ -34,8 +34,8 @@ $result = $conn->query($sql);
                             <td><?php echo $row['water_level']; ?></td>
                             <td><?php echo $row['flow_rate']; ?></td>
                             <td>
-                                <a class="btn btn-info" href="update_flood.php?id=<?php echo $row['flood_event_id']; ?>">Edit</a>&nbsp;
-                                <a class="btn btn-danger" href="delete_flood.php?id=<?php echo $row['flood_event_id']; ?>">Delete</a>
+                                <a class="btn btn-info" href="flood_update.php?id=<?php echo $row['flood_event_id']; ?>">Edit</a>&nbsp;
+                                <a class="btn btn-danger" href="flood_delete.php?id=<?php echo $row['flood_event_id']; ?>">Delete</a>
                             </td>
                         </tr>                       
                 <?php   }

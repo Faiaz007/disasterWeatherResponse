@@ -41,8 +41,8 @@ $result = $conn->query($sql);
                             <td><?php echo $row['country']; ?></td>
                             <td><?php echo $row['population_demographic']; ?></td>
                             <td>
-                                <a class="btn btn-info" href="update_location.php?id=<?php echo $row['location_id']; ?>">Edit</a>&nbsp;
-                                <a class="btn btn-danger" href="delete_location.php?id=<?php echo $row['location_id']; ?>">Delete</a>
+                                <a class="btn btn-info" href="location_update.php?id=<?php echo $row['location_id']; ?>">Edit</a>&nbsp;
+                                <a class="btn btn-danger" href="location_delete.php?id=<?php echo $row['location_id']; ?>">Delete</a>
                             </td>
                         </tr>                       
                 <?php   }

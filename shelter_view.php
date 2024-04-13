@@ -40,8 +40,8 @@ $result = $conn->query($sql);
                             <td><?php echo $row['built_date']; ?></td>
                             <td><?php echo $row['location_id']; ?></td>
                             <td>
-                                <a class="btn btn-info" href="update_shelter.php?id=<?php echo $row['shelter_id']; ?>">Edit</a>&nbsp;
-                                <a class="btn btn-danger" href="delete_shelter.php?id=<?php echo $row['shelter_id']; ?>">Delete</a>
+                                <a class="btn btn-info" href="shelter_update.php?id=<?php echo $row['shelter_id']; ?>">Edit</a>&nbsp;
+                                <a class="btn btn-danger" href="shelter_delete.php?id=<?php echo $row['shelter_id']; ?>">Delete</a>
                             </td>
                         </tr>                       
                 <?php   }

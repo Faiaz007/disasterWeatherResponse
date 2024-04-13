@@ -34,8 +34,8 @@ $result = $conn->query($sql);
                             <td><?php echo $row['magnitude']; ?></td>
                             <td><?php echo $row['depth']; ?></td>
                             <td>
-                                <a class="btn btn-info" href="update_earthquake.php?id=<?php echo $row['earthquake_event_id']; ?>">Edit</a>&nbsp;
-                                <a class="btn btn-danger" href="delete_earthquake.php?id=<?php echo $row['earthquake_event_id']; ?>">Delete</a>
+                                <a class="btn btn-info" href="earthquake_update.php?id=<?php echo $row['earthquake_event_id']; ?>">Edit</a>&nbsp;
+                                <a class="btn btn-danger" href="earthquake_delete.php?id=<?php echo $row['earthquake_event_id']; ?>">Delete</a>
                             </td>
                         </tr>                       
                 <?php   }

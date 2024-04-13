@@ -38,8 +38,8 @@ $result = $conn->query($sql);
                             <td><?php echo $row['center_eye']; ?></td>
                             <td><?php echo $row['radius']; ?></td>
                             <td>
-                                <a class="btn btn-info" href="update_cyclone.php?id=<?php echo $row['cyclone_event_id']; ?>">Edit</a>&nbsp;
-                                <a class="btn btn-danger" href="delete_cyclone.php?id=<?php echo $row['cyclone_event_id']; ?>">Delete</a>
+                                <a class="btn btn-info" href="cyclone_update.php?id=<?php echo $row['cyclone_event_id']; ?>">Edit</a>&nbsp;
+                                <a class="btn btn-danger" href="cyclone_delete.php?id=<?php echo $row['cyclone_event_id']; ?>">Delete</a>
                             </td>
                         </tr>                       
                 <?php   }

@@ -41,8 +41,8 @@ $result = $conn->query($sql);
                             <td><?php echo $row['person_contact_no']; ?></td>
                             <td><?php echo $row['event_id']; ?></td>
                             <td>
-                                <a class="btn btn-info" href="update_disaster_aid_provider.php?id=<?php echo $row['provider_id']; ?>">Edit</a>&nbsp;
-                                <a class="btn btn-danger" href="delete_disaster_aid_provider.php?id=<?php echo $row['provider_id']; ?>">Delete</a>
+                                <a class="btn btn-info" href="disaster_aid_provider_update.php?id=<?php echo $row['provider_id']; ?>">Edit</a>&nbsp;
+                                <a class="btn btn-danger" href="disaster_aid_provider_delete.php?id=<?php echo $row['provider_id']; ?>">Delete</a>
                             </td>
                         </tr>                       
                 <?php   }

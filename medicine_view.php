@@ -48,8 +48,8 @@ $result = $conn->query($sql);
                             <td><?php echo $row['doses']; ?></td>
                             <td><?php echo $row['side_effects']; ?></td>
                             <td>
-                                <a class="btn btn-info" href="update_medicine.php?id=<?php echo $row['med_resource_id']; ?>">Edit</a>&nbsp;
-                                <a class="btn btn-danger" href="delete_medicine.php?id=<?php echo $row['med_resource_id']; ?>">Delete</a>
+                                <a class="btn btn-info" href="medicine_update.php?id=<?php echo $row['med_resource_id']; ?>">Edit</a>&nbsp;
+                                <a class="btn btn-danger" href="medicine_delete.php?id=<?php echo $row['med_resource_id']; ?>">Delete</a>
                             </td>
                         </tr>                       
                 <?php   }

@@ -37,8 +37,8 @@ $result = $conn->query($sql);
                             <td><?php echo $row['fab_type']; ?></td>
                             <td><?php echo $row['fab_condition']; ?></td>
                             <td>
-                                <a class="btn btn-info" href="update_fabric.php?id=<?php echo $row['fab_resource_id']; ?>">Edit</a>&nbsp;
-                                <a class="btn btn-danger" href="delete_fabric.php?id=<?php echo $row['fab_resource_id']; ?>">Delete</a>
+                                <a class="btn btn-info" href="fabric_update.php?id=<?php echo $row['fab_resource_id']; ?>">Edit</a>&nbsp;
+                                <a class="btn btn-danger" href="fabric_delete.php?id=<?php echo $row['fab_resource_id']; ?>">Delete</a>
                             </td>
                         </tr>                       
                 <?php   }

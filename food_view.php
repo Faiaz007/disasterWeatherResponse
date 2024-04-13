@@ -40,8 +40,8 @@ $result = $conn->query($sql);
                             <td><?php echo $row['exp_date']; ?></td>
                             <td><?php echo $row['age_range']; ?></td>
                             <td>
-                                <a class="btn btn-info" href="update_food.php?id=<?php echo $row['food_resource_id']; ?>">Edit</a>&nbsp;
-                                <a class="btn btn-danger" href="delete_food.php?id=<?php echo $row['food_resource_id']; ?>">Delete</a>
+                                <a class="btn btn-info" href="food_update.php?id=<?php echo $row['food_resource_id']; ?>">Edit</a>&nbsp;
+                                <a class="btn btn-danger" href="food_delete.php?id=<?php echo $row['food_resource_id']; ?>">Delete</a>
                             </td>
                         </tr>                       
                 <?php   }
