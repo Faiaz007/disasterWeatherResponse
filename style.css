@@ -107,7 +107,7 @@ h1 {
 }
 
 .current-weather:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
 }
 
 .current-weather h3 {
@@ -334,7 +334,7 @@ h1 {
     margin: 10px;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 .emergency-resources .card:hover {
